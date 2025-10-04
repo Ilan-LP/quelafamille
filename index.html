@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QLF | QueLaMif by KTS</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">    
+</head>
+<body>
+    <!-- Effet de pluie -->
+    <canvas id="rain"></canvas>
+
+    <div id="start-screen">
+        <span id="playBtn"></span>
+    </div>
+
+    <div class="container">
+        <div id="main">
+            <div class="main-div">
+
+              <!-- Agencement profil -->
+              <div class="profile-row">
+                <img id="avatar" width="128" src="static/pfp.jpg" class="pfp" alt="Avatar">
+
+                <div class="profile-info">
+                  <div id="username" class="title" data-title="UID:1">KTS</div>
+
+                  <div class="icon-bar">
+                    <a class="icon" href="#" data-title="WebSite Owner"><img src="assets/crown.png" alt=""></a>
+                    <a class="icon" href="#" data-title="Bug Hunter"><img src="assets/bughunter.png" alt=""></a>
+                    <a class="icon" href="#" data-title="Staff Team"><img src="assets/staff.png" alt=""></a>
+                    <a class="icon" href="#" data-title="IRL Team"><img src="assets/hypesquad.png" alt=""></a>
+                    <a class="icon" href="#" data-title="Premium User"><img src="assets/premium.png" alt=""></a>
+                    <a class="icon" href="#" data-title="Early Supporter"><img src="assets/early.png" alt=""></a>
+ <!--                   <a class="icon" href="#" data-title="Rank"><img src="assets/rank.png" alt=""></a>
+                    <a class="icon" href="#" data-title="Discord"><img src="assets/discord.png" alt=""></a> -->
+                  </div>
+                </div>
+              </div>
+
+              <p class="desc">IT Team | Junior Developer</p>
+            </div>
+
+            <div class="social-buttons">
+                <a href="https://discord.gg/u4H2TWeetF" class="btn discord" target="_blank"><i class="fab fa-discord"></i></a>
+                <a href="https://t.me/kts1337" class="btn telegram" target="_blank"><i class="fab fa-telegram"></i></a>
+                <a href="https://www.instagram.com/devly69/" class="btn instagram" target="_blank"><i class="fab fa-instagram"></i></a>
+            </div>
+
+            <div class="music-div">
+                <img src="static/music.png" class="music-icon" alt="">
+                <div class="music-title">Différents - PNL</div>
+
+                <audio id="audio" loop>
+                    <source src="music.mp3" type="audio/mpeg">
+                </audio>
+
+                <div class="time-display">
+                    <span id="currentTime">0:00</span> / <span id="totalTime">2:12</span>
+                </div>
+
+                <div class="volume">
+                    <label for="vol">Volume</label>
+                    <input id="vol" type="range" min="0" max="100" value="60" step="1">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/rain.js"></script>
+    <script src="js/script.js"></script>
+
+    <div class="view-counter">
+    <i class="fas fa-eye"></i>
+    <span id="viewCount">1337</span>
+</div>
+
+</body>
+</html>
