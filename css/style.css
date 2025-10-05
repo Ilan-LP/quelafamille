@@ -323,8 +323,4 @@ audio{ display:none; }
     border-radius: 14px;
     box-shadow: 0 10px 20px rgba(0,0,0,0.25), 0 0 0 1px rgba(255,255,255,0.08);
   }
-
-  /* pluie derrière tout sans z-index négatif (certains Android/iOS) */
-  #rain{ z-index: 0; }
-  .container, .main-div, .music-div, .social-buttons, .view-counter, #start-screen{ position: relative; z-index: 1; }
 }
